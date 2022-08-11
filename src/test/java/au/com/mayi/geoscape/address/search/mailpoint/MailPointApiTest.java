@@ -25,7 +25,7 @@ class MailPointApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        mailpointApi = new MailPointApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        mailpointApi = new MailPointApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test

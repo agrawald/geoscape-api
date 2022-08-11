@@ -25,7 +25,7 @@ class GeocoderApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        geocoderApi = new GeocoderApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        geocoderApi = new GeocoderApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test

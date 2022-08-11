@@ -27,21 +27,21 @@ class SubmitBatchApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        submitBatchApi = new SubmitBatchApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        submitBatchApi = new SubmitBatchApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test
     void shouldExecute() throws IOException {
         final BatchReq batchReq = new BatchReq();
         final Input input = new Input();
-        input.setFile("ftp://52.64.248.112:8821/outbound/test/");
-        input.setPassword("ZNkSg3uTKto");
-        input.setUsername("aec-batch-test");
+        input.setFile("ftp://localhost:8821/outbound/test/");
+        input.setPassword("password");
+        input.setUsername("batch-test");
         batchReq.setInput(input);
 
         final Output output = new Output();
-        output.setFile("ftp://52.64.248.112:8821/inbound/test/");
-        output.setPassword("ZNkSg3uTKto");
+        output.setFile("ftp://localhost:8821/inbound/test/");
+        output.setPassword("password");
         output.setUsername("aec-batch-test");
         batchReq.setOutput(output);
         batchReq.setType(RequestType.addressGeocoder);

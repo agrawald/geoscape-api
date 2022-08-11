@@ -25,7 +25,7 @@ class VerificationApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        geocoderApi = new VerificationApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        geocoderApi = new VerificationApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test

@@ -28,7 +28,7 @@ class ReverseGeocodeApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        reverseGeocodeApi = new ReverseGeocodeApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        reverseGeocodeApi = new ReverseGeocodeApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test

@@ -25,7 +25,7 @@ class ParcelApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        parcelApi = new ParcelApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        parcelApi = new ParcelApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test

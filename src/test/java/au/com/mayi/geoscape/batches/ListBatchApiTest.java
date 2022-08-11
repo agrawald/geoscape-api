@@ -25,7 +25,7 @@ class ListBatchApiTest {
 
     @BeforeEach
     public void beforeEach() {
-        listBatchApi = new ListBatchApi("https://api.psma.com.au", "pHshAX3bvGGnYPeIUAXOWyLQOaHUkzr5", proxy);
+        listBatchApi = new ListBatchApi("https://api.psma.com.au", "consumerKey", proxy);
     }
 
     @Test
